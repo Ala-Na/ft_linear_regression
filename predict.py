@@ -21,7 +21,7 @@ def meanNormalization(mil: int, mean:float, std:float) -> int:
 	return mil
 
 def getValues() -> Tuple[np.ndarray, float, float] :
-	theta = np.asarray([0.0, 0.0])
+	theta = np.asarray([0.0, 0.0]).reshape(-1, 1)
 	mean = 0
 	std = 1
 	if os.path.isfile('thetas.npz'):
@@ -52,7 +52,7 @@ def checkInput(input: str) -> int:
 
 if __name__ == "__main__" :
 	os.system('clear')
-	
+
 	argv = sys.argv[1:]
 	if len(argv) != 0 and "vect" in argv:
 		vect = True
