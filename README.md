@@ -18,7 +18,7 @@ With ```vect``` argument, it will perform vectorized calculations.
 
 ### train.py
 ```python3 train.py```
-```python3 ptrain.py vect```
+```python3 train.py vect```
 
 A program to perform training of univariate linear regression model.
 A step-by-step guide will explains why and how things are done for linear regression. Additionnal step, not done in this program, are also explained.
