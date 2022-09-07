@@ -31,24 +31,22 @@ def predictedPrices(theta: np.ndarray, x: np.ndarray) -> np.ndarray :
 	return np.dot(X, theta)
 
 def getValues() -> Tuple[np.ndarray, float, float] :
-	theta = np.asarray([0.0, 0.0])
-	mean = 0
-	std = 1
-	if os.path.isfile('thetas.npz'):
-		try:
-			values = np.load('thetas.npz')
-			theta = values['theta']
-			mean = float(values['mean'])
-			std = float(values['std'])
-		except:
-			theta = np.asarray([0.0, 0.0]).reshape(-1, 1)
-			mean = 0
-			std = 1
-		if not np.issubdtype(theta.dtype, np.number) or theta.ndim != 2 \
-			or theta.shape != (2, 1) :
-			theta = np.asarray([0.0, 0.0]).reshape(-1, 1)
-			mean = 0
-			std = 1
+	try:
+		values = np.load('thetas.npz')
+		theta = values['theta']
+		mean = float(values['mean'])
+		std = float(values['std'])
+	except:
+		print("\033[91mOops, can't find thetas.npz file or data is corrupted.\033[0m")
+		print("Hint: Run train.py")
+		print("Exiting...")
+		exit()
+	if not np.issubdtype(theta.dtype, np.number) or theta.ndim != 2 \
+		or theta.shape != (2, 1) :
+		print("\033[91mOops, can't find thetas.npz file or data is corrupted.\033[0m")
+		print("Hint: Run train.py")
+		print("Exiting...")
+		exit()
 	return theta, mean, std
 
 def costCalculation(y: np.ndarray, y_hat: np.ndarray) -> float:
