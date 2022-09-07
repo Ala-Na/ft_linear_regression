@@ -10,6 +10,7 @@ The aim is to construct an algorithm to perform a linear regression and forecast
 
 ### predict.py
 ```python3 predict.py```
+
 ```python3 predict.py vect```
 
 A simple program which take an input (number of mileage) and returns a predicted price.
@@ -18,6 +19,7 @@ With ```vect``` argument, it will perform vectorized calculations.
 
 ### train.py
 ```python3 train.py```
+
 ```python3 train.py vect```
 
 A program to perform training of univariate linear regression model.
@@ -26,6 +28,7 @@ With ```vect``` argument, it will perform vectorized calculations.
 
 ### accuracy.py
 ```python3 accuracy.py```
+
 A program which explains the differents accuracy measures available and perform it for our current data set.
 
 
