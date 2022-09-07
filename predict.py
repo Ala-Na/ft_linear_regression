@@ -1,11 +1,16 @@
 import numpy as np
 import os
 from typing import Tuple
+import sys
 
-def predictPrice(theta: np.ndarray, mil: int) -> float :
+def predictPrice(theta: np.ndarray, mil: int, vect: bool = False) -> float :
 	try:
-		X = np.insert(np.asarray(float(mil)).reshape(-1, 1), 0, 1.0, axis=1)
-		return float(np.dot(X, theta))
+		if vect == True:
+		# Vectorized version
+			X = np.insert(np.asarray(float(mil)).reshape(-1, 1), 0, 1.0, axis=1)
+			return float(np.dot(X, theta))
+		# Non-vectorized
+		return theta[0][0] + theta[1][0] * mil
 	except:
 		print("\033[91m\nOops ! Something went wrong in predict price!\033[0m")
 		print("Exiting...")
@@ -46,7 +51,19 @@ def checkInput(input: str) -> int:
 		return -1
 
 if __name__ == "__main__" :
+	argv = sys.argv[1:]
+	if len(argv) != 0 and "vect" in argv:
+		vect = True
+	else:
+		vect = False
+
 	print("\n\t\t\033[01;04m~  Welcome to predict programm !  ~\033[0m\n")
+
+	if (vect == False):
+		print("\n\033[02mYou're using a non-vectorized implementation\nIf you wish to launch this programm with a vectorized implementation :\npython3 predict.py vect\n\033[0m")
+	else :
+		print("\n\033[02mYou're using a vectorized implementation\nIf you wish t launch without vectorized implementation, don't set the \"vect\" option\n\033[0m")
+
 	print("\033[93mPlease enter the mileage of car you wish to sold (in kilometers) :\033[0m")
 	inp = input("--> ")
 	print("You entered {} km".format(inp))
@@ -57,6 +74,6 @@ if __name__ == "__main__" :
 		exit()
 	theta, mean, std = getValues()
 	normalized_mil = meanNormalization(mil, mean, std)
-	price = predictPrice(theta, normalized_mil)
+	price = predictPrice(theta, normalized_mil, vect)
 	print("\033[92;01m\n--> It's predicted price is of {:.2f} $\n\033[0m".format(price))
 
