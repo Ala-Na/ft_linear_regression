@@ -2,9 +2,11 @@
 
 A 42 school project, from the machine learning / artificial intelligence branch.
 
+
 ## Purpose
 A two-day project to carry out a univariate linear regression on a dataset containing cars (data.csv). The characteristic employed is the number of kilometres and the target is the price.
 The aim is to construct an algorithm to perform a linear regression and forecast car prices based on a given mileage.
+
 
 ## Programs
 
@@ -32,9 +34,11 @@ With ```vect``` argument, it will perform vectorized calculations.
 A program which explains the differents accuracy measures available and perform it for our current data set.
 
 
+
 ## Language used
 Python :snake:
 Why ? Because it's the main language used in data science and machine learning nowadays.
+
 
 ## Libraries used
 - Numpy
