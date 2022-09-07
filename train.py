@@ -6,7 +6,6 @@ import matplotlib.animation as animation
 import os
 import sys
 
-
 def getDatas(filename: str) -> Tuple[np.ndarray, np.ndarray]:
 	if not os.path.isfile(filename):
 		print("\033[91mOops, can't find {} data file.\033[0m".format(filename))
@@ -67,7 +66,7 @@ def costCalculation(y: np.ndarray, y_hat: np.ndarray, vect:  bool = False) \
 	for yi, yi_hat in zip(y, y_hat):
 		loss_elem.append([(yi_hat[0] - yi[0]) ** 2])
 	np.asarray(loss_elem)
-	cost_value = float(1/(2*y.shape[0]) * np.sum(loss_elem))
+	cost_value = float(1/(2 * y.shape[0]) * np.sum(loss_elem))
 	return cost_value
 
 def fitModel(max_iter: int, alpha: float, x: np.ndarray, y: np.ndarray, \
@@ -161,6 +160,8 @@ def drawAnimatedGraphs(cost_evolution: list, theta_history: list, mean: float, \
 
 
 if __name__ == "__main__" :
+	os.system('clear')
+
 	argv = sys.argv[1:]
 	if len(argv) != 0 and "vect" in argv:
 		vect = True

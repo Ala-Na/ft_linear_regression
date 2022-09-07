@@ -51,6 +51,8 @@ def checkInput(input: str) -> int:
 		return -1
 
 if __name__ == "__main__" :
+	os.system('clear')
+	
 	argv = sys.argv[1:]
 	if len(argv) != 0 and "vect" in argv:
 		vect = True
