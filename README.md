@@ -17,7 +17,6 @@ A 42 school project, from the machine learning / artificial intelligence branch.
 
 ### :brain: predict.py
 ```python3 predict.py```
-
 ```python3 predict.py vect```
 
 A simple program which take an input (number of mileage) and returns a predicted price.
@@ -26,7 +25,6 @@ With ```vect``` argument, it will perform vectorized calculations.
 
 ### :mechanical_arm: train.py
 ```python3 train.py```
-
 ```python3 train.py vect```
 
 A program to perform training of univariate linear regression model.
