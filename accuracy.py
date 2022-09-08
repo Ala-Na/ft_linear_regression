@@ -74,7 +74,7 @@ if __name__ == "__main__" :
 	os.system('clear')
 	print("\n\t\t\033[01;04m~  Welcome to precision programm !  ~\033[0m\n")
 
-	print("There's a lot of different calculus to check our model precision")
+	print("There's a lot of different calculus to check our model accuracy")
 	print("Let's review some of them !\n")
 
 	(x, y) = getDatas('data.csv')
@@ -92,7 +92,7 @@ if __name__ == "__main__" :
 	os.system('clear')
 
 	print("\n\033[93mCost / loss function:\033[0m\n")
-	print("\033[02mIt's the one for which derivative are used used to \nperform \ngradient descent\n\033[0m")
+	print("\033[02mIt's the one for which derivatives are used to perform \ngradient descent\n\033[0m")
 	print("\033[02mPerfect result would be 0 (near impossible except if overfitting)\n\033[0m")
 	print("\n\t\t\033[01m1 / 2m * SUM((predictions - targets) ** 2)\033[0m\n")
 	print("Result for our model: {}".format(costCalculation(y, y_hat)))
@@ -101,8 +101,8 @@ if __name__ == "__main__" :
 	os.system('clear')
 
 	print("\033[93m\nMean Squared Error function:\033[0m\n")
-	print("\033[02mAverage of squared difference\033[0m")
-	print("\033[02mIt measures the variance of residuals and penalize large prediction \nerros\n\033[0m")
+	print("\033[02mAverage of squared differences\033[0m")
+	print("\033[02mIt measures the variance of residuals and penalize large prediction \nerrors\n\033[0m")
 	print("\033[02mPerfect result would be 0 (near impossible except if overfitting)\n\033[0m")
 	print("\n\t\t\033[01m1 / m * SUM((targets - predicted) ** 2)\033[0m\n")
 	print("Result for our model: {}".format(mseCalculation(y, y_hat)))
@@ -112,7 +112,7 @@ if __name__ == "__main__" :
 
 	print("\033[93m\nRoot Mean Squared Error function:\033[0m\n")
 	print("\033[02mSquare route of MSE\033[0m")
-	print("\033[02mIt measures the standard deviation of residuals and also penalize \nlarge prediction erros\n\033[0m")
+	print("\033[02mIt measures the standard deviation of residuals and also penalize \nlarge prediction errors\n\033[0m")
 	print("\033[02m2nd most used accuracy comparator for linear regression\n\033[0m")
 	print("\033[02mPerfect result would be 0 (near impossible except if overfitting)\n\033[0m")
 	print("\n\t\t\033[01mSqrt(MSE)\033[0m\n")
@@ -123,7 +123,7 @@ if __name__ == "__main__" :
 
 	print("\033[93m\nMean Absolute Error function:\033[0m\n")
 	print("\033[02mAverage of the absolute difference\033[0m")
-	print("\033[02mIt measures the average of the residuals and doesn't penalize \nlarge prediction erros\n\033[0m")
+	print("\033[02mIt measures the average of the residuals and doesn't penalize \nlarge prediction errors\n\033[0m")
 	print("\033[02mEasier to interpret than MSE/RMSE but non-differentiable, so less \nused\033[0m")
 	print("\033[02mPerfect result would be 0 (near impossible except if overfitting)\n\033[0m")
 	print("\n\t\t\033[01m1 / m * SUM(abs(targets - predicted))\033[0m\n")
@@ -132,7 +132,7 @@ if __name__ == "__main__" :
 	cont = input('\n\033[96mPress a key to continue...\033[0m\n')
 	os.system('clear')
 
-	print("\033[93m\nR2 score coefficient of determination or R-squared):\033[0m\n")
+	print("\033[93m\nR2 score (coefficient of determination or R-squared):\033[0m\n")
 	print("\033[02mProportion of variance in the dependent variable\033[0m")
 	print("\033[02m(variance = difference between targets and average of predicted \nvalues)\033[0m")
 	print("\033[02mCan help to understand the influence of independents variables \non the depends variables\n\033[0m")

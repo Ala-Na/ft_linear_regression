@@ -185,12 +185,12 @@ if __name__ == "__main__" :
 
 	print("\nIt's an equation under the format :\n\n\t\t\033[01my_hat = theta0 + theta1 * x\033[0m\n")
 
-	print("Here, we choose random parameters theta0 and theta1, and we want to \naffine them.")
+	print("Here, we choose random parameters theta0 and theta1, and we want to \naffine them")
 	print("In other words: Choose parameters which give better prediction \n(y_hat), closer to expected result")
-	print("For that, we calculate the cost of the model for given parameters \nthetas == global difference between predicted and expected results")
-	print("And then, we affinate those parameters thanks to the derivative \nproperties of the cost function.\n")
+	print("For that, we calculate the cost of the model for given parameters \nthetas (= global difference between predicted and expected results)")
+	print("Then, we affinate those parameters thanks to the derivative \nproperties of the cost function\n")
 
-	print("\033[93m\n--> Let's perfom it !\n\033[0m")
+	print("\033[93m\n--> Let's perform it !\n\033[0m")
 
 	cont = input('\n\033[96mPress a key to continue...\033[0m\n')
 	os.system('clear')
@@ -247,15 +247,15 @@ if __name__ == "__main__" :
 	os.system('clear')
 
 	print("\033[93m\n5 - Now, let's train our model !\033[0m")
-	print("\033[02mFor the magic to happen, we need to update theta0 and theta1 on a \nprevisously defined max number of iterations\033[0m")
-	print("\033[02mWe can actually stop the iterations when thetas stop evolving between \ntwo iterations because it means it's their best values/the cost function\n value is at it's lowest\033[0m")
+	print("\033[02mFor the magic to happen, we need to update theta0 and theta1 on a \npreviously defined max number of iterations\033[0m")
+	print("\033[02mWe can actually stop the iterations when thetas stop evolving between \ntwo iterations because it means it's their best values/the cost function \nvalue is at it's lowest\033[0m")
 	print("\033[02mFor each iteration, we calculate new thetas thanks to gradient descent\033[0m")
-	print("\033[02mWe obtained gradient values thanks to derivative properties of cost function\033[0m")
+	print("\033[02mWe obtained gradient values thanks to derivatives properties of cost function\033[0m")
 	print("\033[02mThose gradient values give the \"direction\" in which thetas should evolve to \nreduce cost \033[0m")
-	print("\033[02mThen, we update simultaneously every theta in the corresponding direction \nby substracting this direction from original thetas.\033[0m")
+	print("\033[02mThen, we update simultaneously every theta in the corresponding direction \nby substracting this direction from original thetas\033[0m")
 	print("\033[02mThe importance of the update is set by a learning rate alpha which is \ncommonly a small number under 1\033[0m")
-	print("\033[02mAlpha is important as a big alpha can miss the optimal thetas value and \na small alpha can make convergence happen slower\033[0m")
-	print("\033[02mHere, beginning thetas are both 0, number of max iterations is 50000 and \nlearning rate is 0.5\033[0m")
+	print("\033[02mAlpha is important as a big alpha can miss the optimal thetas values and \na small alpha can make convergence happen slower\033[0m")
+	print("\033[02mHere, thetas are both 0 at beginning, number of max iterations is 50000 and \nlearning rate is 0.5\033[0m")
 
 	print("\nEquations details for each step:\n\n\033[01m   theta0 = theta0 - alpha * 1/m SUM(prediction[i] - target[i])\n   theta1 = theta1 - alpha * 1/m SUM((prediction[i] - target[i]) * feature[i])\033[0m\n")
 
