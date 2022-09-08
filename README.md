@@ -1,4 +1,4 @@
-# ft_linear_regression
+<h1 style="text-align: center;">ft_linear_regression</h1>
 
 A 42 school project, from the machine learning / artificial intelligence branch.
 <p align='center'>
