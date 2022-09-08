@@ -40,8 +40,9 @@ A program which explains the differents accuracy measures available and perform 
 
 ## Language used
 Python :snake:
-
+<i>
 Why ? Because it's the main language used in data science and machine learning nowadays.
+ </i>
 
 
 ## Libraries used
