@@ -132,7 +132,7 @@ if __name__ == "__main__" :
 	cont = input('\n\033[96mPress a key to continue...\033[0m\n')
 	os.system('clear')
 
-	print("\033[93m\nR2 score (coeeficient of determination or R-squared):\033[0m\n")
+	print("\033[93m\nR2 score coefficient of determination or R-squared):\033[0m\n")
 	print("\033[02mProportion of variance in the dependent variable\033[0m")
 	print("\033[02m(variance = difference between targets and average of predicted \nvalues)\033[0m")
 	print("\033[02mCan help to understand the influence of independents variables \non the depends variables\n\033[0m")

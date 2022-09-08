@@ -195,7 +195,7 @@ if __name__ == "__main__" :
 	cont = input('\n\033[96mPress a key to continue...\033[0m\n')
 	os.system('clear')
 
-	print("\033[93m\n1- First let's recuperate the data and store it into arrays\033[0m")
+	print("\033[93m\n1- First let's get the data and store it into arrays\033[0m")
 	print("\033[02mAn array of features (mileage) and an array of targets (prices)\033[0m")
 	print("\033[02mBecause we only have one variable here (mileage), features array \nis of shape 1 * number of examples\033[0m")
 	print("\033[02mIf we had n variables or features, it would be an array of shape \nm * number of examples\033[0m")
