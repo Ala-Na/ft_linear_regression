@@ -1,8 +1,11 @@
 # ft_linear_regression
 
 A 42 school project, from the machine learning / artificial intelligence branch.
+<p align='center'>
 ![GIFLinearReg](https://user-images.githubusercontent.com/67599180/189076214-3aeaf657-429e-42ad-9197-c89b6887b190.gif)
-Project screen capture 
+
+>Project screen capture
+ </p>
 
 ## Purpose
 A two-day project to carry out a univariate linear regression on a dataset containing cars (data.csv). The characteristic employed is the number of kilometres and the target is the price.
@@ -38,6 +41,7 @@ A program which explains the differents accuracy measures available and perform 
 
 ## Language used
 Python :snake:
+
 Why ? Because it's the main language used in data science and machine learning nowadays.
 
 
