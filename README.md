@@ -3,7 +3,7 @@
 A 42 school project, from the machine learning / artificial intelligence branch.
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/67599180/189076214-3aeaf657-429e-42ad-9197-c89b6887b190.gif' alt='animated'>
-
+<p align='center'>
  _Project screen capture_
  </p>
 
