@@ -2,6 +2,7 @@
 
 A 42 school project, from the machine learning / artificial intelligence branch.
 ![GIFLinearReg](https://user-images.githubusercontent.com/67599180/189076214-3aeaf657-429e-42ad-9197-c89b6887b190.gif)
+Project screen capture 
 
 ## Purpose
 A two-day project to carry out a univariate linear regression on a dataset containing cars (data.csv). The characteristic employed is the number of kilometres and the target is the price.
