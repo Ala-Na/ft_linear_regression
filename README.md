@@ -1,9 +1,9 @@
 # ft_linear_regression
 
 A 42 school project, from the machine learning / artificial intelligence branch.
-<p align='center'>
-<img src='https://user-images.githubusercontent.com/67599180/189076214-3aeaf657-429e-42ad-9197-c89b6887b190.gif' alt='animated'>
 
+<img align='center' src='https://user-images.githubusercontent.com/67599180/189076214-3aeaf657-429e-42ad-9197-c89b6887b190.gif' alt='animated'>
+<p align='center'>
  <i align='center'>Project screen capture</i>
  </p>
 
