@@ -3,13 +3,12 @@
 A 42 school project, from the machine learning / artificial intelligence branch.
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/67599180/189076214-3aeaf657-429e-42ad-9197-c89b6887b190.gif' alt='animated'>
-
->Project screen capture
+*Project screen capture*
  </p>
 
 ## Purpose
-A two-day project to carry out a univariate linear regression on a dataset containing cars (data.csv). The characteristic employed is the number of kilometres and the target is the price.
-The aim is to construct an algorithm to perform a linear regression and forecast car prices based on a given mileage.
+>A two-day project to carry out a univariate linear regression on a dataset containing cars (data.csv). The characteristic employed is the number of kilometres and the target is the price.
+>The aim is to construct an algorithm to perform a linear regression and forecast car prices based on a given mileage.
 
 
 ## Programs
